@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEEABEA51984CDA600F37054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABEA41984CDA600F37054 /* AppDelegate.swift */; };
+		BEEABEA71984CDA600F37054 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BEEABEA61984CDA600F37054 /* GameScene.sks */; };
+		BEEABEA91984CDA600F37054 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABEA81984CDA600F37054 /* GameScene.swift */; };
+		BEEABEAB1984CDA600F37054 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABEAA1984CDA600F37054 /* GameViewController.swift */; };
+		BEEABEAE1984CDA600F37054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEABEAC1984CDA600F37054 /* Main.storyboard */; };
+		BEEABEB01984CDA600F37054 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEABEAF1984CDA600F37054 /* Images.xcassets */; };
+		BEEABEBC1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABEBB1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEEABEB61984CDA700F37054 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEEABE971984CDA600F37054 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEEABE9E1984CDA600F37054;
+			remoteInfo = SpiteKitPhysicsExperiments;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEEABE9F1984CDA600F37054 /* SpiteKitPhysicsExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiteKitPhysicsExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEABEA31984CDA600F37054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEABEA41984CDA600F37054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEEABEA61984CDA600F37054 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		BEEABEA81984CDA600F37054 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		BEEABEAA1984CDA600F37054 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BEEABEAD1984CDA600F37054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEEABEAF1984CDA600F37054 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEEABEB51984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiteKitPhysicsExperimentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEABEBA1984CDA700F37054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEABEBB1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiteKitPhysicsExperimentsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEEABE9C1984CDA600F37054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEEABEB21984CDA700F37054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEEABE961984CDA600F37054 = {
+			isa = PBXGroup;
+			children = (
+				BEEABEA11984CDA600F37054 /* SpiteKitPhysicsExperiments */,
+				BEEABEB81984CDA700F37054 /* SpiteKitPhysicsExperimentsTests */,
+				BEEABEA01984CDA600F37054 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEEABEA01984CDA600F37054 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEEABE9F1984CDA600F37054 /* SpiteKitPhysicsExperiments.app */,
+				BEEABEB51984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEEABEA11984CDA600F37054 /* SpiteKitPhysicsExperiments */ = {
+			isa = PBXGroup;
+			children = (
+				BEEABEA41984CDA600F37054 /* AppDelegate.swift */,
+				BEEABEA61984CDA600F37054 /* GameScene.sks */,
+				BEEABEA81984CDA600F37054 /* GameScene.swift */,
+				BEEABEAA1984CDA600F37054 /* GameViewController.swift */,
+				BEEABEAC1984CDA600F37054 /* Main.storyboard */,
+				BEEABEAF1984CDA600F37054 /* Images.xcassets */,
+				BEEABEA21984CDA600F37054 /* Supporting Files */,
+			);
+			path = SpiteKitPhysicsExperiments;
+			sourceTree = "<group>";
+		};
+		BEEABEA21984CDA600F37054 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEEABEA31984CDA600F37054 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEEABEB81984CDA700F37054 /* SpiteKitPhysicsExperimentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEEABEBB1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift */,
+				BEEABEB91984CDA700F37054 /* Supporting Files */,
+			);
+			path = SpiteKitPhysicsExperimentsTests;
+			sourceTree = "<group>";
+		};
+		BEEABEB91984CDA700F37054 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEEABEBA1984CDA700F37054 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEEABE9E1984CDA600F37054 /* SpiteKitPhysicsExperiments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEEABEBF1984CDA700F37054 /* Build configuration list for PBXNativeTarget "SpiteKitPhysicsExperiments" */;
+			buildPhases = (
+				BEEABE9B1984CDA600F37054 /* Sources */,
+				BEEABE9C1984CDA600F37054 /* Frameworks */,
+				BEEABE9D1984CDA600F37054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpiteKitPhysicsExperiments;
+			productName = SpiteKitPhysicsExperiments;
+			productReference = BEEABE9F1984CDA600F37054 /* SpiteKitPhysicsExperiments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEEABEB41984CDA700F37054 /* SpiteKitPhysicsExperimentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEEABEC21984CDA700F37054 /* Build configuration list for PBXNativeTarget "SpiteKitPhysicsExperimentsTests" */;
+			buildPhases = (
+				BEEABEB11984CDA700F37054 /* Sources */,
+				BEEABEB21984CDA700F37054 /* Frameworks */,
+				BEEABEB31984CDA700F37054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEEABEB71984CDA700F37054 /* PBXTargetDependency */,
+			);
+			name = SpiteKitPhysicsExperimentsTests;
+			productName = SpiteKitPhysicsExperimentsTests;
+			productReference = BEEABEB51984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEEABE971984CDA600F37054 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Simon Gladman";
+				TargetAttributes = {
+					BEEABE9E1984CDA600F37054 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					BEEABEB41984CDA700F37054 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = BEEABE9E1984CDA600F37054;
+					};
+				};
+			};
+			buildConfigurationList = BEEABE9A1984CDA600F37054 /* Build configuration list for PBXProject "SpiteKitPhysicsExperiments" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEEABE961984CDA600F37054;
+			productRefGroup = BEEABEA01984CDA600F37054 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEEABE9E1984CDA600F37054 /* SpiteKitPhysicsExperiments */,
+				BEEABEB41984CDA700F37054 /* SpiteKitPhysicsExperimentsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEEABE9D1984CDA600F37054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEABEB01984CDA600F37054 /* Images.xcassets in Resources */,
+				BEEABEA71984CDA600F37054 /* GameScene.sks in Resources */,
+				BEEABEAE1984CDA600F37054 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEEABEB31984CDA700F37054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEEABE9B1984CDA600F37054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEABEA91984CDA600F37054 /* GameScene.swift in Sources */,
+				BEEABEAB1984CDA600F37054 /* GameViewController.swift in Sources */,
+				BEEABEA51984CDA600F37054 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEEABEB11984CDA700F37054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEABEBC1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEEABEB71984CDA700F37054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEEABE9E1984CDA600F37054 /* SpiteKitPhysicsExperiments */;
+			targetProxy = BEEABEB61984CDA700F37054 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEEABEAC1984CDA600F37054 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEABEAD1984CDA600F37054 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEEABEBD1984CDA700F37054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		BEEABEBE1984CDA700F37054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEEABEC01984CDA700F37054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SpiteKitPhysicsExperiments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEEABEC11984CDA700F37054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SpiteKitPhysicsExperiments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BEEABEC31984CDA700F37054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpiteKitPhysicsExperiments.app/SpiteKitPhysicsExperiments";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpiteKitPhysicsExperimentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		BEEABEC41984CDA700F37054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpiteKitPhysicsExperiments.app/SpiteKitPhysicsExperiments";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpiteKitPhysicsExperimentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEEABE9A1984CDA600F37054 /* Build configuration list for PBXProject "SpiteKitPhysicsExperiments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEABEBD1984CDA700F37054 /* Debug */,
+				BEEABEBE1984CDA700F37054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEEABEBF1984CDA700F37054 /* Build configuration list for PBXNativeTarget "SpiteKitPhysicsExperiments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEABEC01984CDA700F37054 /* Debug */,
+				BEEABEC11984CDA700F37054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEEABEC21984CDA700F37054 /* Build configuration list for PBXNativeTarget "SpiteKitPhysicsExperimentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEABEC31984CDA700F37054 /* Debug */,
+				BEEABEC41984CDA700F37054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEEABE971984CDA600F37054 /* Project object */;
+}

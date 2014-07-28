@@ -8,38 +8,54 @@
 
 import SpriteKit
 
+
 class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+    
+    let canvasWidth: UInt32 = 800
+    let canvasHeight: UInt32 = 800
+    
+    override func didMoveToView(view: SKView)
+    {
+        self.scene.backgroundColor = UIColor.yellowColor();
         
-        self.addChild(myLabel)
+        self.physicsWorld.gravity = CGVectorMake(0, -6);
+        let physicsBody = SKPhysicsBody (edgeLoopFromRect: self.frame);
+        self.physicsBody = physicsBody;
+        
+        for i in 1...30
+        {
+            let shape = SKShapeNode(circleOfRadius: 20);
+            shape.strokeColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.5);
+            shape.fillColor = UIColor.blueColor()
+            shape.lineWidth = 4
+            shape.position = CGPoint (x: i * 10, y: i * 10)
+            self.addChild(shape);
+            
+            shape.physicsBody = SKPhysicsBody(circleOfRadius: shape.frame.size.width/2)
+            shape.physicsBody.friction = 0.3
+            shape.physicsBody.restitution = 0.9;
+            shape.physicsBody.mass = 0.5
+                      shape.physicsBody.allowsRotation = false
+      
+            let xyzzy : AnyObject = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource("MyParticle", ofType: "sks"));
+            var particle:SKEmitterNode = xyzzy as SKEmitterNode;
+            particle.targetNode = shape;
+
+            particle.particleLifetime = 1.5;
+ 
+            shape.addChild(particle)
+        }
+
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+    {
+  
     }
    
-    override func update(currentTime: CFTimeInterval) {
+    override func update(currentTime: CFTimeInterval)
+    {
         /* Called before each frame is rendered */
+        println(currentTime)
     }
 }

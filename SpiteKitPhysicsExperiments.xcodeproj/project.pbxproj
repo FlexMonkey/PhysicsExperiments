@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E07B6EC1986E33F00B501BD /* BokehParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3E07B6EA1986E33F00B501BD /* BokehParticles.sks */; };
+		3E07B6ED1986E33F00B501BD /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E07B6EB1986E33F00B501BD /* bokeh.png */; };
 		BEEABEA51984CDA600F37054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABEA41984CDA600F37054 /* AppDelegate.swift */; };
 		BEEABEA71984CDA600F37054 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BEEABEA61984CDA600F37054 /* GameScene.sks */; };
 		BEEABEA91984CDA600F37054 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABEA81984CDA600F37054 /* GameScene.swift */; };
@@ -21,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E0E475B1986E0C80059A9AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEEABE971984CDA600F37054 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEEABE9E1984CDA600F37054;
+			remoteInfo = SpiteKitPhysicsExperiments;
+		};
 		BEEABEB61984CDA700F37054 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEEABE971984CDA600F37054 /* Project object */;
@@ -31,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E07B6EA1986E33F00B501BD /* BokehParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BokehParticles.sks; sourceTree = "<group>"; };
+		3E07B6EB1986E33F00B501BD /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 		BEEABE9F1984CDA600F37054 /* SpiteKitPhysicsExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiteKitPhysicsExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEABEA31984CDA600F37054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEEABEA41984CDA600F37054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +109,8 @@
 				BEEABEAC1984CDA600F37054 /* Main.storyboard */,
 				BEEABEAF1984CDA600F37054 /* Images.xcassets */,
 				BEEABEA21984CDA600F37054 /* Supporting Files */,
+				3E07B6EA1986E33F00B501BD /* BokehParticles.sks */,
+				3E07B6EB1986E33F00B501BD /* bokeh.png */,
 			);
 			path = SpiteKitPhysicsExperiments;
 			sourceTree = "<group>";
@@ -159,6 +172,7 @@
 			);
 			dependencies = (
 				BEEABEB71984CDA700F37054 /* PBXTargetDependency */,
+				3E0E475C1986E0C80059A9AF /* PBXTargetDependency */,
 			);
 			name = SpiteKitPhysicsExperimentsTests;
 			productName = SpiteKitPhysicsExperimentsTests;
@@ -208,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEABEC819860FF900F37054 /* spark.png in Resources */,
+				3E07B6EC1986E33F00B501BD /* BokehParticles.sks in Resources */,
+				3E07B6ED1986E33F00B501BD /* bokeh.png in Resources */,
 				BEEABECA19861EE800F37054 /* Sparks.sks in Resources */,
 				BEEABEB01984CDA600F37054 /* Images.xcassets in Resources */,
 				BEEABECC19861F2800F37054 /* Magic.sks in Resources */,
@@ -248,6 +264,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3E0E475C1986E0C80059A9AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEEABE9E1984CDA600F37054 /* SpiteKitPhysicsExperiments */;
+			targetProxy = 3E0E475B1986E0C80059A9AF /* PBXContainerItemProxy */;
+		};
 		BEEABEB71984CDA700F37054 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEEABE9E1984CDA600F37054 /* SpiteKitPhysicsExperiments */;
@@ -421,6 +442,7 @@
 				BEEABEC11984CDA700F37054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEEABEC21984CDA700F37054 /* Build configuration list for PBXNativeTarget "SpiteKitPhysicsExperimentsTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +451,7 @@
 				BEEABEC41984CDA700F37054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

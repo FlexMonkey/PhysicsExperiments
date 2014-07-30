@@ -35,7 +35,7 @@ class GameScene: SKScene {
         self.physicsBody = physicsBody;
         self.addChild(fieldNode);
         
-        for i in 1...3
+        for i in 1...15
         {
             let shape = SKShapeNode(circleOfRadius: 20);
             shape.strokeColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.5);
@@ -46,20 +46,21 @@ class GameScene: SKScene {
             shape.position.x = self.size.width / 2;
             shape.position.y = self.size.height / 2;
             
-            self.addChild(shape);
+            addChild(shape);
             
-            shape.physicsBody = SKPhysicsBody(circleOfRadius: 20)
-            shape.physicsBody.friction = 0.7
+            shape.physicsBody = SKPhysicsBody(circleOfRadius: 20);
+            shape.physicsBody.friction = 0;
             shape.physicsBody.charge = 4;
             shape.physicsBody.restitution = 0.4;
             shape.physicsBody.mass = 1;
-            shape.physicsBody.allowsRotation = false
+            shape.physicsBody.allowsRotation = true
             shape.physicsBody.fieldBitMask = fieldMask;
-
+            
             let untypedEmitter : AnyObject = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource("MyParticle", ofType: "sks"));
             
-            var emitter:SKEmitterNode = untypedEmitter as SKEmitterNode;
-                      emitter.particlePosition = shape.position;
+            let emitter:SKEmitterNode = untypedEmitter as SKEmitterNode;
+            
+            emitter.particlePosition = shape.position;
             addChild(emitter)
 
             let shapeEmitterTuple = (shape, emitter);
@@ -77,7 +78,7 @@ class GameScene: SKScene {
     {
         let touch = event.allTouches().anyObject().locationInNode(self);
         
-        fieldNode.strength = -10;
+        fieldNode.strength = 2;
         self.fieldNode.position = touch;
     }
    

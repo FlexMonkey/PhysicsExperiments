@@ -20,7 +20,9 @@ class GameScene: SKScene {
     {
         shapeEmitterTuples = [];
         fieldNode = SKFieldNode.radialGravityField();
-        fieldNode.physicsBody = SKPhysicsBody(circleOfRadius: 200)
+        fieldNode.falloff = 0.5;
+        fieldNode.animationSpeed = 0.5; 
+        fieldNode.physicsBody = SKPhysicsBody(circleOfRadius: 20)
         fieldNode.categoryBitMask = categoryMask;
         super.init(coder: aDecoder)
     }

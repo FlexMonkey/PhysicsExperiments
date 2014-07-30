@@ -18,8 +18,6 @@
 		BEEABEBC1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEABEBB1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift */; };
 		BEEABEC719860FF900F37054 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BEEABEC519860FF900F37054 /* MyParticle.sks */; };
 		BEEABEC819860FF900F37054 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = BEEABEC619860FF900F37054 /* spark.png */; };
-		BEEABECA19861EE800F37054 /* Sparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = BEEABEC919861EE800F37054 /* Sparks.sks */; };
-		BEEABECC19861F2800F37054 /* Magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = BEEABECB19861F2800F37054 /* Magic.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +53,6 @@
 		BEEABEBB1984CDA700F37054 /* SpiteKitPhysicsExperimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiteKitPhysicsExperimentsTests.swift; sourceTree = "<group>"; };
 		BEEABEC519860FF900F37054 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		BEEABEC619860FF900F37054 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		BEEABEC919861EE800F37054 /* Sparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Sparks.sks; sourceTree = "<group>"; };
-		BEEABECB19861F2800F37054 /* Magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Magic.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +99,6 @@
 				BEEABEA81984CDA600F37054 /* GameScene.swift */,
 				BEEABEAA1984CDA600F37054 /* GameViewController.swift */,
 				BEEABEC519860FF900F37054 /* MyParticle.sks */,
-				BEEABEC919861EE800F37054 /* Sparks.sks */,
-				BEEABECB19861F2800F37054 /* Magic.sks */,
 				BEEABEC619860FF900F37054 /* spark.png */,
 				BEEABEAC1984CDA600F37054 /* Main.storyboard */,
 				BEEABEAF1984CDA600F37054 /* Images.xcassets */,
@@ -224,9 +218,7 @@
 				BEEABEC819860FF900F37054 /* spark.png in Resources */,
 				3E07B6EC1986E33F00B501BD /* BokehParticles.sks in Resources */,
 				3E07B6ED1986E33F00B501BD /* bokeh.png in Resources */,
-				BEEABECA19861EE800F37054 /* Sparks.sks in Resources */,
 				BEEABEB01984CDA600F37054 /* Images.xcassets in Resources */,
-				BEEABECC19861F2800F37054 /* Magic.sks in Resources */,
 				BEEABEA71984CDA600F37054 /* GameScene.sks in Resources */,
 				BEEABEAE1984CDA600F37054 /* Main.storyboard in Resources */,
 				BEEABEC719860FF900F37054 /* MyParticle.sks in Resources */,

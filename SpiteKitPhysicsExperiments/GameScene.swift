@@ -14,17 +14,14 @@ let categoryMask: UInt32 = 0b1;
 class GameScene: SKScene {
   
     let fieldNode: SKFieldNode;
-    //let dragField: SKFieldNode;
-    
-  
+    var shapeEmitterTuples : [(SKShapeNode,SKEmitterNode)];
+
     init(coder aDecoder: NSCoder!)
     {
-        //dragField = SKFieldNode.dragField();
-        
+        shapeEmitterTuples = [];
         fieldNode = SKFieldNode.radialGravityField();
-        fieldNode.physicsBody = SKPhysicsBody(circleOfRadius: 80)
+        fieldNode.physicsBody = SKPhysicsBody(circleOfRadius: 200)
         fieldNode.categoryBitMask = categoryMask;
-        fieldNode.strength = 2.0;
         super.init(coder: aDecoder)
     }
 
@@ -36,45 +33,59 @@ class GameScene: SKScene {
         self.physicsWorld.gravity = CGVectorMake(0, 0);
         let physicsBody = SKPhysicsBody (edgeLoopFromRect: self.frame);
         self.physicsBody = physicsBody;
-        self.addChild(fieldNode)
+        self.addChild(fieldNode);
         
-        for i in 1...10
+        for i in 1...3
         {
             let shape = SKShapeNode(circleOfRadius: 20);
             shape.strokeColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.5);
             shape.fillColor = UIColor.blueColor()
             shape.lineWidth = 4
-            shape.position = CGPoint (x: i * 10, y: i * 10)
+            shape.position = CGPoint();
+           
+            shape.position.x = self.size.width / 2;
+            shape.position.y = self.size.height / 2;
+            
             self.addChild(shape);
             
-            shape.physicsBody = SKPhysicsBody(circleOfRadius: shape.frame.size.width/2)
+            shape.physicsBody = SKPhysicsBody(circleOfRadius: 20)
             shape.physicsBody.friction = 0.7
-
+            shape.physicsBody.charge = 4;
             shape.physicsBody.restitution = 0.4;
-            shape.physicsBody.mass = 0.75;
+            shape.physicsBody.mass = 1;
             shape.physicsBody.allowsRotation = false
             shape.physicsBody.fieldBitMask = fieldMask;
- 
+
             let untypedEmitter : AnyObject = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource("MyParticle", ofType: "sks"));
             
             var emitter:SKEmitterNode = untypedEmitter as SKEmitterNode;
-                       emitter.targetNode = shape;
- 
-            shape.addChild(emitter)
+                      emitter.particlePosition = shape.position;
+            addChild(emitter)
+
+            let shapeEmitterTuple = (shape, emitter);
+            shapeEmitterTuples.append(shapeEmitterTuple);
         }
 
     }
 
+    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!)
+    {
+        fieldNode.strength = 0;
+    }
     
     override func touchesMoved(touches: NSSet!, withEvent event: UIEvent!)
     {
         let touch = event.allTouches().anyObject().locationInNode(self);
+        
+        fieldNode.strength = -10;
         self.fieldNode.position = touch;
     }
    
     override func update(currentTime: CFTimeInterval)
     {
-        /* Called before each frame is rendered */
-        println(currentTime)
+        for (shape, emitter) in shapeEmitterTuples
+        {
+            emitter.particlePosition = shape.position;
+        }
     }
 }

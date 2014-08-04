@@ -16,12 +16,12 @@ class GameScene: SKScene {
     let fieldNode: SKFieldNode;
     var shapeEmitterTuples : [(SKShapeNode,SKEmitterNode)];
 
-    init(coder aDecoder: NSCoder!)
+    required init(coder aDecoder: NSCoder!)
     {
         shapeEmitterTuples = [];
         fieldNode = SKFieldNode.radialGravityField();
         fieldNode.falloff = 0.5;
-        fieldNode.animationSpeed = 0.5; 
+        fieldNode.animationSpeed = 0.5;
         fieldNode.physicsBody = SKPhysicsBody(circleOfRadius: 20)
         fieldNode.categoryBitMask = categoryMask;
         super.init(coder: aDecoder)
